@@ -10,3 +10,24 @@ html,body{
 
 
 }
+
+.menu{
+    background-color: #666666;
+    color:#ffffff;
+    border: 1px solid;
+    display: flex;
+
+}
+.item-menu{
+list-style: none;
+padding: 10px  20px;
+
+}
+.item-menu:hover{
+    background-color: #000000;
+}
+.link-menu{
+    text-decoration: none;
+    color: aquamarine;
+    font-weight: bold;
+}
