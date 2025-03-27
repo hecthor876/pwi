@@ -1,14 +1,33 @@
 body, html{
     margin: 0;
     padding: 0;
-    background: color #e6e6e6e6;
+    background-color: #e6e6e6e6;
     height: 100%;
 
 
 }
-container{
+.container{
     width: 80%;
     background-color: #ffffff;
     margin: 0 auto;
     height: 100%;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    grid-template-rows: 250px auto 100px;
+    grid-template-areas:  ;
+}
+header{
+    background-color: #ff6500;
+
+}
+main{
+    background-color: #0065ff
+    ;
+}
+aside{
+    background-color:#ff65ff ;
+
+}
+footer{
+    background-color: #006500;
 }
