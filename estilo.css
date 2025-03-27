@@ -6,13 +6,13 @@ html,body{
     margin:0;
     padding:0;
     height: 100%;
-    background-color: #cccccc; 
+    background-color: #000000; 
 
 
 }
 
 .menu{
-    background-color: #666666;
+    background-color: #ffffff;
     color:#ffffff;
     border: 1px solid;
     display: flex;
@@ -24,7 +24,7 @@ padding: 10px  20px;
 
 }
 .item-menu:hover{
-    background-color: #000000;
+    background-color: #4812db;
 }
 .link-menu{
     text-decoration: none;
