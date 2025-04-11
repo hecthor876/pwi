@@ -1,12 +1,12 @@
 div {
-    border:1px solid #1982aca:
+    
 }
 
 html,body{
     margin:0;
     padding:0;
     height: 100%;
-    background-color: #560697f5; 
+    background-color: #aca9aff5; 
 
 
 }
@@ -31,3 +31,12 @@ padding: 10px  20px;
     color: rgb(0, 217, 255);
     font-weight: bold;
 }
+.card{
+    width: 180px;
+    height: 190px;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+    
