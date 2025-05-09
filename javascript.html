@@ -1,30 +1,25 @@
-<script>
-    /* alert("oi sala de aula")            /*Mostra a mensagem na tela*/
-     /*var texto = "Oi galera"             /*Declarção de variavel tipo texto*/
-    /* var nome = "tocchetto"                   /*Declarção de variavel tipo texto*/
-     /*var number = 10                     /*Declaração de variavel tipo numero*/
-    /* var altura = 1.60                   /*Declaração de variavel tipo real*/
-     /*var trabalha = true                 /*Declaração de variavel tipo real*/
-     /*prompt("Digite o que voce quiser")  /*Abre um espaço pro usuario digitar*/
-     /*alert(nome)                         /*Chama a variavel selecionada*/
-     
-     
-     function Cliquebotao(){
-         MostrarAlerta(somar(prompt('digite o primeiro numero'), prompt('digite o segundo numero') ) )
-     }
-     function MostrarAlerta(texto)
-     {
-         alert(texto)
-     }
-     function somar (num1, num2)
-     {
-             var soma= Number(num1)+Number(num2)
-             return soma 
-     }
- 
-     //MostrarAlerta("hello world!!!!")
-     //MostrarAlerta(prompt("digite algo"))
-     
- </script>
- 
- <button onclick="Cliquebotao()">somar</button>
+
+     <input type="text"  name="num1" id="numero1"/>
+     <br />
+     <input type="text"  name="num2" id="numero2"/>
+     <br />
+        <button id="botão" onclick="somar()">
+            +
+    </button>
+
+     <script>
+        function somar()
+    {
+    
+       
+     var numero = document.getElementById("numero1")
+     var numero = document.getElementById("numero2")
+     alert(Number (numero1.value) + Number (numero2.value))
+
+
+  
+    
+
+    }
+
+
