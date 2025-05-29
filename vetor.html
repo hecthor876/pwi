@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetor</title>
+</head>
+<body>
+
+    <input type="text" name="texto" id="texto" >
+    <button id="botao" > adicionar  </button>    
+
+    <ul id="ListaImagens">
+
+    </ul>
+
+    <script>
+
+        var texto = document.getElementById("texto")
+        var botao = document.getElementById("botao")
+        var imagens = document.getElementById("ListaImagens")
+
+        function adicionarImagens(){
+            var item = document.createElement("li")
+            var img = document.createElement("img")
+            img.src = texto.value
+            img.height =  300
+            img.width = 300
+            item.append(img)
+            imagens.append(item)
+
+            console.log(item)
+            console.log(imagens)
+
+        }
+
+        botao.addEventListener("click", adicionarImagens)
+
+
+        var nomes = ["Barreto", "JM", "JV" , "Tocchetto", "Gabryel", "Fernando", "Julio", "Maria Clara", "Cristiano Ronaldo", "Neymar", "Lucas Moura", "Oscar", "Antony", "Casemiro", "Mario"]
+       
+       for(var i = 0; i < nomes.length; i++){
+           document.write("<br> <br>" + i + ' -  ' + nomes[i])
+       }
+       
+       
+        console.log(  + nomes.length + "\t\t\t ------------------------------- \n\n\t\t\t\t\t" + nomes[numMaximo(nomes.length)] )
+        
+
+        function numMaximo(numeroMaximo){
+            return Math.floor(Math.random() * numeroMaximo)
+        }
+
+        var nomes = ["Tocchetto", "Barreo", "JM", "Gabryel", "Nalu", ]    
+
+//alert(nomes[numeroAletorio( nomes.length)])
+
+for(var i = 0; i < nomes.length; i++)
+{
+    document.write("<br>"+nomes[i])
+}
+
+        
+        
+            function numeroAletorio(numeroMaximo)
+            {
+                return Math.floor(Math.random() * numeroMaximo)
+            }
+
+         /*   nomes.reverse(); //inverte a ordem dos elementos
+            nomes.shift(); //remove o primeiro elemento
+            nomes.unshift(0); //adiciona o no começo
+            nomes.pop(); //remove no final
+            nomes.push(0); // adiciona no final     */
+
+
+
+            //novo modelo de for 
+            nomes.forEach(
+                (valor, indece) => {
+                    document.white("indece: "+indece+"valor é :"+ valor+"<br>")
+                }
+            );
+            nomes.reverse(); //inverte a ordem dos elementos
+
+            document.write("<hr>")
+
+            nomes.forEach(
+                (valor, indece) => {
+                    document.white("indece: "+indece+"valor é :"+ valor+"<br>")
+                }
+            );
+
+
+    </script>
+    
+</body>
+</html>
